@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;900&family=Righteous&display=swap');
+
+body {
+    background-color: #FB6B6B;
+    font-family: 'Recursive', sans-serif;;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginaInicial{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 264px;
+    height: 317px;
+    margin: 0 auto;
+}
+
+.paginaInicial img{
+    width: 136px;
+    height: 161px;
+}
+
+.paginaInicial h3 {
+    font-size: 36px;
+    font-family: 'Righteous', cursive;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.paginaInicial button {
+    width: 264px;
+    height: 54px;
+    background-color: #FFFFFF;
+    border: 1px solid #D70900;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+
+    font-size: 18px;
+    text-align: center;
+    color: #D70900;
+    cursor: pointer;
+}
+
+/* PAGINA DE PERGUTAS */
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 256px;
+    margin: 0 auto;
+}
+
+.topo img {
+    width: 52px;
+    height: 60px;
+    margin-top: 42px;
+    margin-bottom: 52px;
+}
+
+.topo h3 {
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.pergunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333333;
+    width: 300px;
+    height: 65px;
+
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    padding: 16px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.pergunta ion-icon { 
+    color: #333333;
+    font-size: 26px
+}
+
+/* CARD DE RESPOSTAS*/
+
+.cardResposta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 299px;
+    height: 131px;
+    padding: 6px 14px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    background-color: #FFFFD5;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.cardResposta p{
+    font-size: 18px;
+    margin-top: 12px;
+    color: #333333;
+}
+
+.botoesCard {
+    display: flex;
+    justify-content: space-between;
+    width: 271px;
+}
+
+.botoesCard button {
+    width: 85px;
+    height: 37px;
+    text-align: center;
+    font-size: 13px;
+    color: #FFFFFF;
+
+    border-radius: 5px;
+}
+
+.vermelho{
+    background-color: #FF3030;
+}
+
+.laranja{
+    background-color: #FF922E;
+}
+
+.verde{
+    background-color: #2FBE34;
+}
