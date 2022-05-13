@@ -1,3 +1,5 @@
+import Status from "./Status"
+
 function RenderizarDeck() {
      return (
          <>
@@ -21,23 +23,40 @@ function RenderizarDeck() {
                <span>Pergunta 5</span>
                  <ion-icon name="play-outline"></ion-icon>
              </div>
+             <div className="pergunta">
+               <span>Pergunta 5</span>
+                 <ion-icon name="play-outline"></ion-icon>
+             </div>
+             <div className="pergunta">
+               <span>Pergunta 5</span>
+                 <ion-icon name="play-outline"></ion-icon>
+             </div>
+             <div className="pergunta">
+               <span>Pergunta 5</span>
+                 <ion-icon name="play-outline"></ion-icon>
+             </div>
+             <div className="pergunta">
+               <span>Pergunta 5</span>
+                 <ion-icon name="play-outline"></ion-icon>
+             </div>
         </>
     )
 }
 
-function Respostas(){
-    return (
-        <>  
-            <div className="cardResposta">
-                <p>JSX é uma sitexe para escrever HTML dentro do JS</p>
-                <div className="botoesCard">
-                    <button className="vermelho">Não Lembrei</button>
-                    <button className="laranja">Quase não lembrei</button> 
-                    <button className="verde">Zap!</button>
-                </div>
-            </div>
-        </>      
-    );
+function Mensagem(){
+    return(
+        <>
+        <div className="mensagem">
+            <p> 
+                <img src="images/sad.png" alt="sad"></img>
+                <strong>Putz...</strong>
+            </p>
+            <p>Ainda faltam alguns...</p>
+            <p>Mas não desanime!</p>
+        </div>
+    </>
+    )
+    
 }
 
 export default function Perguntas() {
@@ -48,7 +67,8 @@ export default function Perguntas() {
             <h3>ZapRecall</h3>
             </div>    
             <RenderizarDeck />
-            <Respostas />
+            <Mensagem />
+            <Status />
         </>
     )
 }
