@@ -35,6 +35,7 @@ body {
     border: 1px solid #D70900;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
+    border-width: 0;
 
     font-size: 18px;
     text-align: center;
@@ -73,6 +74,7 @@ body {
     color: #333333;
     width: 300px;
     height: 65px;
+    cursor: pointer;
 
 
     background-color: #FFFFFF;
@@ -82,7 +84,7 @@ body {
     margin-bottom: 24px;
     padding: 16px;
     box-sizing: border-box;
-    overflow-y: scroll;
+    overflow: scroll;
 }
 
 .pergunta ion-icon { 
@@ -101,6 +103,7 @@ body {
     padding: 6px 14px;
     box-sizing: border-box;
     margin: 0 auto;
+    margin-bottom: 24px;
 
     background-color: #FFFFD5;
     box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.15);
@@ -117,6 +120,7 @@ body {
     width: 30px;
     height: 20px;
     margin-left: 240px;
+    cursor: pointer;
 }
 
 .botoesCard {
@@ -131,8 +135,10 @@ body {
     text-align: center;
     font-size: 12px;
     color: #FFFFFF;
+    cursor: pointer;
 
     border-radius: 5px;
+    border-width: 0;
 }
 
 .botoesCard button:nth-child(1){
@@ -154,6 +160,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 24px;
     
     width: 100%;
     height: 70px;

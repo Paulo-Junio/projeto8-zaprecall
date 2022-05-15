@@ -1,6 +1,6 @@
 import React from "react";
 import PagInicial from "./PagInicial";
-import Perguntas from "./Perguntas";
+import Questoes from "./Questoes";
 
 export default function App(){
 
@@ -9,7 +9,7 @@ export default function App(){
     return (
         <>
             {
-                inicio === "inicial" ? <PagInicial setInicio={setInicio} /> : <Perguntas />
+                inicio === "inicial" ? <PagInicial setInicio={setInicio} /> : <Questoes />
             }
         </>
     )

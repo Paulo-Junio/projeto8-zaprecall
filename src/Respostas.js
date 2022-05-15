@@ -1,8 +1,8 @@
-export default function Respostas(){
+export default function Respostas({resposta}){
     return (
         <>  
             <div className="cardResposta">
-                <p>JSX é uma sitexe para escrever HTML dentro do JS</p>
+                <p>{resposta}</p>
                 <div className="botoesCard">
                     <button>Não lembrei</button>
                     <button>Quase não lembrei</button> 
