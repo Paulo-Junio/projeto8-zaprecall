@@ -1,4 +1,5 @@
 import React from "react";
+import logoGrande from "./images/logo.png";
 
 export default function PagInicial({setInicio}) {
     
@@ -11,7 +12,7 @@ export default function PagInicial({setInicio}) {
         <>
             <div className="container">
                 <div className="paginaInicial">
-                    <img src="images/logo.png" alt="ZapRecall"></img>
+                    <img src={logoGrande} alt="ZapRecall"></img>
                     <h3>ZapRecall</h3>
                     <button onClick={()=> MudarPagina("proxima")}>Iniciar Recall!</button>
                 </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Status from "./Status"
+import logoPequena from "./images/logo-pequena.png";
 import ExibirPergunta from "./ExibirPergunta"
 import ListarPerguntas from "./ListarPerguntas";
 
@@ -36,7 +37,7 @@ export default function Questoes({setStatusDeck, statusDeck,deck}) {
     return (
         <>
             <div className="topo">
-            <img src="images/logo-pequena.png" alt="ZapRecall"></img>
+            <img src={logoPequena} alt="ZapRecall"></img>
             <h3>ZapRecall</h3>
             </div>    
             {deck.map((questao,index)=> <RenderizarDeck key ={index} index={index} recall={questao} setStatusDeck={setStatusDeck} setRespondidas={setRespondidas} respondidas={respondidas} statusDeck={statusDeck}/>)}

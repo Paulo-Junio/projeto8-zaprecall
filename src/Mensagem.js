@@ -1,3 +1,7 @@
+import party from "./images/party.png";
+import sad from "./images/sad.png";
+
+
 function MensagemFinal({icon, mensagem, status,motivacao}) {
     return (
         <>
@@ -18,9 +22,9 @@ export default function Mensagem({statusDeck}){
 
     return(
         <>
-            {erradas === true ? <MensagemFinal icon={"images/sad.png"} mensagem={"Putz..."}status={"Ainda faltam alguns..."} motivacao={"Mas não desanime!"}/>
+            {erradas === true ? <MensagemFinal icon={sad} mensagem={"Putz..."}status={"Ainda faltam alguns..."} motivacao={"Mas não desanime!"}/>
             :
-            <MensagemFinal icon={"images/party.png"} mensagem={"Parabéns!"} status={"Voce não esqueceu de nenhum flashcard!"} motivacao={""}/>}
+            <MensagemFinal icon={party} mensagem={"Parabéns!"} status={"Voce não esqueceu de nenhum flashcard!"} motivacao={""}/>}
         </>
     );
     

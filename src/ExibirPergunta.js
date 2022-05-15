@@ -1,12 +1,13 @@
 import React from "react"
 import Respostas from "./Respostas"
+import setinha from "./images/setinha.png"
 
 
 function ExibirEnunciado({pergunta, setRespostaCorreta}) {
     return (
         <div className="cardResposta">
             <p>{pergunta}</p>
-            <img src="images/setinha.png" alt="setinha" onClick={() =>setRespostaCorreta("mostrar")}>
+            <img src={setinha} alt="setinha" onClick={() =>setRespostaCorreta("mostrar")}>
             </img>
         </div>
     );

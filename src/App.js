@@ -1,4 +1,6 @@
 import React from "react";
+import "./reset.css";
+import "./estilos.css";
 import PagInicial from "./PagInicial";
 import Questoes from "./Questoes";
 
