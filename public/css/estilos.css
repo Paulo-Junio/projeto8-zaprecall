@@ -89,9 +89,47 @@ body {
 
 .pergunta ion-icon { 
     color: #333333;
-    font-size: 26px
+    font-size: 23px;
+}
+/* CLASSES PARA ESTADO DA RESPOSTA*/
+
+.respostaCerta {
+    color: #2FBE34;
+    text-decoration: line-through;
+
 }
 
+.respostaCerta ion-icon {
+    color: #2FBE34;
+    font-size: 23px;
+}
+
+.respostaMedia {
+    color: #FF922E;
+    text-decoration: line-through;
+
+}
+
+.respostaMedia ion-icon {
+    color: #FF922E;
+    font-size: 23px;
+}
+
+.respostaErrada {
+    color: #FF3030;
+    text-decoration: line-through;
+
+}
+
+.respostaErrada ion-icon {
+    color: #FF3030;
+    font-size: 23px;
+}
+
+.alinhamento {
+    display: flex;
+    margin-top: 6px;
+}
 /* CARD DE RESPOSTAS*/
 
 .cardResposta {
@@ -175,10 +213,7 @@ body {
     z-index: 1;
 }
 
-.rodape ion-icon {
-    padding: 10px;
-    color: green;
-}
+
 
 .mensagem {
     display: flex;
@@ -191,6 +226,7 @@ body {
     padding: 15px;
     margin-bottom: 70px;
     box-sizing: border-box;
+    text-align: center;
 
     background-color: #FFFFFF;
     color: #333333;

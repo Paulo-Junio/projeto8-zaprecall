@@ -1,11 +1,9 @@
 import React from "react";
 
 
-let numeroPergunta=0;
-export default function ListarPerguntas({setQuestao,estilo}){
-    numeroPergunta ++
+export default function ListarPerguntas({setQuestao,estilo, index}){
     const {classe, icone} = estilo;
-    
+    let numeroPergunta = index + 1;
     return (
         <>
             <div className={classe} onClick={() =>setQuestao("virada")}>

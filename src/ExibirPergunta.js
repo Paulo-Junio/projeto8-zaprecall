@@ -13,14 +13,16 @@ function ExibirEnunciado({pergunta, setRespostaCorreta}) {
 }
 
 
-export default function ExibirPergunta({alternativa}) {
+export default function ExibirPergunta({alternativa,setestados,respondidas, statusDeck}) {
     const {pergunta,resposta} = alternativa;
     const [respostaCorreta, setRespostaCorreta] = React.useState("escondida");
+    const novoSetestados = [...setestados, setRespostaCorreta]
+
 
     return (
         <>
             {(respostaCorreta === "escondida") ? <ExibirEnunciado pergunta={pergunta} setRespostaCorreta={setRespostaCorreta} />
-            : <Respostas resposta={resposta} />}
+            : <Respostas resposta={resposta} setes={novoSetestados} respondidas={respondidas} statusDeck={statusDeck}/>}
         </>
     );
 }

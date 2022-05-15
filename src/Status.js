@@ -1,11 +1,33 @@
-export default function Status(){
+import Mensagem from "./Mensagem";
+
+function EstilosIcon({icon}) {
+    let classe;
+    if (icon === "close-circle") {
+        classe = "respostaErrada";
+    } else if (icon === "help-circle") {
+        classe = "respostaMedia";
+    } else {
+        classe = "respostaCerta"
+    }
+
+    return (
+        <>
+            <div className={classe}><ion-icon name={icon}></ion-icon></div>
+        </>
+    )
+}
+
+export default function Status({statusDeck, tamanho,respondidas}){
     return (
         <>
             <div className="rodape">
-                <p>0/4 CONCLUIDOS</p>
-                <ion-icon name="checkmark-circle"></ion-icon>
-
+                <p>{respondidas}/{tamanho} CONCLUIDOS</p>
+                <div className="alinhamento">
+                    {statusDeck.map((icon,index) => <EstilosIcon key={index} icon={icon}/>)}
+                </div>
             </div> 
+
+            {tamanho === respondidas ? <Mensagem statusDeck={statusDeck}/>: ''}
         </>
     )
 }
