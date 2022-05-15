@@ -5,6 +5,14 @@ body {
     font-family: 'Recursive', sans-serif;;
 }
 
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    position: absolute;
+    top: 30%;
+}
 
 .paginaInicial{
     display: flex;
@@ -13,7 +21,6 @@ body {
     align-items: center;
     width: 264px;
     height: 317px;
-    margin: 0  auto;
 }
 
 .paginaInicial img{

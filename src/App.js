@@ -1,7 +1,27 @@
 import React from "react";
 import PagInicial from "./PagInicial";
 import Questoes from "./Questoes";
-//AQUI WU VOU CRIAR O ARRAY DE SIMBOLOS PARA RENDERIZAR EM BAIXO DA CONTAGEM E TBM O NUMERO DE QUESTÕES QUE VÃO SER EXIBIDAS E QUANTAS JÁ FORAM RESPONDIDAS PODER SER O LENGTH DO ARRAY DE ICON
+
+const deck= [
+    {
+        pergunta:"O que é JSX?",
+        resposta:"Uma extensão de linguagem do JavaScript"
+    },
+    {
+        pergunta:"Componentes devem iniciar com __ ",
+        resposta:"letra maiúscula"
+    },
+    {
+        pergunta:"O React é __ ",
+        resposta:"uma biblioteca JavaScript para construção de interfaces"
+    },
+    {
+        pergunta:"Podemos colocar __ dentro do JSX",
+        resposta:"expressões"
+    }
+]
+
+
 export default function App(){
 
     const [inicio, setInicio] = React.useState("inicial");
@@ -10,7 +30,7 @@ export default function App(){
     return (
         <>
             {
-                inicio === "inicial" ? <PagInicial setInicio={setInicio} /> : <Questoes setStatusDeck={setStatusDeck} statusDeck={statusDeck}/>
+                inicio === "inicial" ? <PagInicial setInicio={setInicio} /> : <Questoes setStatusDeck={setStatusDeck} statusDeck={statusDeck} deck={deck}/>
             }
         </>
     )
